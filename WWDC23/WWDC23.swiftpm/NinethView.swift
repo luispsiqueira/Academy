@@ -53,13 +53,13 @@ What is the value of x?
                             .font(.custom("TimesNewRomanPS-BoldMT", size: 60))
                             .foregroundColor(.black)
                     }
-                    .padding(.top, -245)
+                    .padding(.top, -205)
                 }
                 
                 
                 Spacer()
                 HStack{
-                    NavigationLink(destination: TenthView()){
+                    NavigationLink(destination: TenthView().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -74,7 +74,7 @@ What is the value of x?
 
                     
                     
-                    NavigationLink(destination: Wrong2()) {
+                    NavigationLink(destination: Wrong2().navigationBarBackButtonHidden(true)) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.gray)
@@ -87,7 +87,7 @@ What is the value of x?
                     
                     
                     
-                    NavigationLink(destination: Wrong2()){
+                    NavigationLink(destination: Wrong2().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -99,14 +99,14 @@ What is the value of x?
                         }
                     }
                 }
-                .padding(.top, 140)
+                .padding(.top, 280)
                 Spacer()
                 
                 
                 
                 
                 
-                NavigationLink(destination: Help2()){
+                NavigationLink(destination: Help2().navigationBarBackButtonHidden(true)){
                     ZStack {
                         Circle()
                             .fill(Color.white)

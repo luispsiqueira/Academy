@@ -13,7 +13,7 @@ struct FifteenthView: View {
     let fifthSpriteScene = SKScene(fileNamed: "FifthSpriteScene")
     
     var body: some View {
-        //NavigationView{
+        NavigationView{
             ZStack{
                 if let fifthSpriteScene {
                     SpriteView(scene: fifthSpriteScene)
@@ -21,7 +21,7 @@ struct FifteenthView: View {
                 }
                 
             }
-        //}
+        }
     }
 }
 

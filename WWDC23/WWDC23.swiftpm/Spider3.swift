@@ -29,7 +29,7 @@ struct Spider3: View {
                 
                 
                 Spacer()
-                NavigationLink(destination: FifteenthView()){
+                NavigationLink(destination: FifteenthView().navigationBarBackButtonHidden(true)){
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.gray)

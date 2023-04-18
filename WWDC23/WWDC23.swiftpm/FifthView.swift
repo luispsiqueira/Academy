@@ -49,7 +49,7 @@ struct FifthView: View {
                 
                 Spacer()
                 HStack{
-                    NavigationLink(destination: Wrong1()){
+                    NavigationLink(destination: Wrong1().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -64,7 +64,7 @@ struct FifthView: View {
 
                     
                     
-                    NavigationLink(destination: SixthView()) {
+                    NavigationLink(destination: SixthView().navigationBarBackButtonHidden(true)) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.gray)
@@ -77,7 +77,7 @@ struct FifthView: View {
                     
                     
                     
-                    NavigationLink(destination: Wrong1()){
+                    NavigationLink(destination: Wrong1().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -96,7 +96,7 @@ struct FifthView: View {
                 
                 
                 
-                NavigationLink(destination: Help1()){
+                NavigationLink(destination: Help1().navigationBarBackButtonHidden(true)){
                     ZStack {
                         Circle()
                             .fill(Color.white)

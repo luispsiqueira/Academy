@@ -37,7 +37,7 @@ struct Help1: View {
                 
         
                 Spacer()
-                NavigationLink(destination: FifthView()) {
+                NavigationLink(destination: FifthView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.gray)

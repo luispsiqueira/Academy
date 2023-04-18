@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 struct StartView: View {
     var body: some View {
@@ -21,19 +22,15 @@ struct StartView: View {
                     
                     HStack{
                         Spacer()
-                        Text("Nome do jogo")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
+                        Image("Rescue")
                         Spacer()
                     }
-                    .padding(.top, 250)
+                    .padding(.top, 180)
                     
                     
                     
                     Spacer()
-                    NavigationLink(destination: SecondView()) {
+                    NavigationLink(destination: SecondView().navigationBarBackButtonHidden(true)) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.black)
@@ -43,8 +40,26 @@ struct StartView: View {
                                 .font(.title)
                         }
                     }
-                    .padding(.bottom, 120)
+                    .padding(.top, 400)
+                    
+                    Spacer()
+                    Button(action: {
+                        exit(0)
+                    }){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.black)
+                                .frame(width: 200, height: 50)
+                            Text("Exit")
+                                .font(.title)
+                                .foregroundColor(.white)
+                        }
+                        .padding(.bottom, 85)
+                    }
                 }
+            }
+            .onAppear{
+                Music.y.playmusic(music: .music1, loops: -1)
             }
         }
     }
@@ -53,5 +68,34 @@ struct StartView: View {
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
         StartView()
+    }
+}
+
+
+
+class Music {
+    static let y = Music()
+    
+    var play: AVAudioPlayer?
+    
+    enum option: String {
+        case music1
+    }
+    
+    func playmusic(music: option, loops: Int = 0){
+        guard let x = Bundle.main.url(forResource: music.rawValue, withExtension: "wav") else {
+            return
+        }
+        
+        do{
+            play = try AVAudioPlayer(contentsOf: x)
+            play?.numberOfLoops = loops
+            play?.volume = 0.6
+            play?.play()
+        }
+        catch _{
+            print("Error")
+        }
+        
     }
 }

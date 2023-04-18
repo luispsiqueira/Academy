@@ -57,7 +57,6 @@ class SixthSpriteSceneCode: SKScene {
             if nodesA.first?.name == "Left" {
                 self.sophia?.run(SKAction.moveBy(x: -30, y: 0, duration: 0.2))
             }
-            
         }
     }
     

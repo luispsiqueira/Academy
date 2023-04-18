@@ -24,9 +24,10 @@ struct ThirdView: View {
                 
                 HStack{
                     Spacer()
-                    Text("Her father is arrested in the woods that spiders inhabit. She needs to go walking through the woods, but there are two warnings: \n\nYou need to be careful, if she cross with then,  she won't come back.\nAnd the second is that she can't pass where there are trees. \n\n\n\n\n\n\n\n\nBeside that, she needs to learn some spells to go through the woods. For that, you need to succeed a math logic challenge. You also can use the help button if you need it, it will be on the right side of the screen.")
+                    Text("Her father is arrested in the woods that spiders inhabit. She needs to go walking through the woods, but you need to be careful because she can not cross with the spiders\n and she also can't pass where there are trees. \n\n\n\n\n\n\nBesides that, she needs to learn some spells to go through the woods. For that, you need to succeed a math logic challenge. You also can use the help button if you need it.")
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                        .font(.title2)
                     Spacer()
                 }
                 .padding(.top, 80)
@@ -53,7 +54,7 @@ struct ThirdView: View {
                 
                 
                 Spacer()
-                NavigationLink(destination: FourthView()) {
+                NavigationLink(destination: FourthView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.green)

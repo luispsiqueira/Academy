@@ -23,7 +23,7 @@ struct NineteenthView: View {
                 }
                 
                 if spider04{
-                    NavigationLink(destination: Spider4(), isActive: $spider04) {
+                    NavigationLink(destination: Spider4().navigationBarBackButtonHidden(true), isActive: $spider04) {
                         EmptyView()
                     }
                     .hidden()

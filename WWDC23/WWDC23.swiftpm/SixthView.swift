@@ -19,13 +19,13 @@ struct SixthView: View {
                 
                 HStack{
                     Spacer()
-                    Text("Congrats, Sophia learn the spell!")
+                    Text("Congrats, Sophia learn the spell! \n\n\n\n\n Try press the button of the spell on the next \nscreem to see what happen.")
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     Spacer()
                 }
-                .padding(.top, 300)
+                .padding(.top, 200)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
@@ -35,10 +35,10 @@ struct SixthView: View {
                         .font(.custom("TimesNewRomanPS-BoldMT", size: 60))
                         .foregroundColor(.black)
                 }
-                .padding(.top, 10)
+                .padding(.top, -300)
                 
                 Spacer()
-                NavigationLink(destination: SeventhView()) {
+                NavigationLink(destination: SeventhView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.gray)

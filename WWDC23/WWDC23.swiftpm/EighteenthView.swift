@@ -38,7 +38,7 @@ struct EighteenthView: View {
                 .padding(.top, 10)
                 
                 Spacer()
-                NavigationLink(destination: NineteenthView()) {
+                NavigationLink(destination: NineteenthView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.gray)

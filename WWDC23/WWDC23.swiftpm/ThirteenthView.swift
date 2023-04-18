@@ -22,7 +22,6 @@ struct ThirteenthView: View {
                     Text("""
 Excellent, Sophia is almost finding her father. The last spell she needs to learn is the one that unlock doors and gates. To get it, answer right the following question.
 
-  
 
 
 
@@ -33,7 +32,7 @@ What is the value of x?
                         .font(.title2)
                     Spacer()
                 }
-                .padding(.top, 100)
+                .padding(.top, 80)
                 
                 
                 
@@ -57,7 +56,7 @@ What is the value of x?
                 
                 Spacer()
                 HStack{
-                    NavigationLink(destination: FourteenthView()){
+                    NavigationLink(destination: FourteenthView().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -72,7 +71,7 @@ What is the value of x?
 
                     
                     
-                    NavigationLink(destination: Wrong3()) {
+                    NavigationLink(destination: Wrong3().navigationBarBackButtonHidden(true)) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.gray)
@@ -85,7 +84,7 @@ What is the value of x?
                     
                     
                     
-                    NavigationLink(destination: Wrong3()){
+                    NavigationLink(destination: Wrong3().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -104,7 +103,7 @@ What is the value of x?
                 
                 
                 
-                NavigationLink(destination: Help3()){
+                NavigationLink(destination: Help3().navigationBarBackButtonHidden(true)){
                     ZStack {
                         Circle()
                             .fill(Color.white)
@@ -117,7 +116,7 @@ What is the value of x?
                             .foregroundColor(.white)
                     }
                 }
-                .padding(.trailing, -270)
+                //.padding(.trailing, 0)
                 .padding(.top, -200)
             }
             

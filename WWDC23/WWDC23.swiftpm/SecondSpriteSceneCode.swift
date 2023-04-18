@@ -20,7 +20,6 @@ class SecondSpriteSceneCode: SKScene {
     var down: SKSpriteNode?
     var right: SKSpriteNode?
     var left: SKSpriteNode?
-    var check: SKSpriteNode?
 
     
     override func didMove(to view: SKView) {
@@ -30,7 +29,6 @@ class SecondSpriteSceneCode: SKScene {
         down = childNode(withName: "Down") as? SKSpriteNode
         right = childNode(withName: "Right") as? SKSpriteNode
         left = childNode(withName: "Left") as? SKSpriteNode
-        check = childNode(withName: "Check") as? SKSpriteNode
         
         wall?.physicsBody?.categoryBitMask = 1
         sophia?.physicsBody?.collisionBitMask = 1

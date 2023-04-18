@@ -18,8 +18,8 @@ struct Twenty_firstView: View {
             Spacer()
             Text("""
 You did it!
-Sophia found her father and
-save him from the spiders
+Sophia has found her father and
+saved him from the spiders
 and Elizabeth. Now, they
 will continue their fight,
 and together they will be able
@@ -37,7 +37,7 @@ You want play again?
         
             
         VStack{
-            NavigationLink(destination: StartView()) {
+            NavigationLink(destination: StartView().navigationBarBackButtonHidden(true)) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.gray)

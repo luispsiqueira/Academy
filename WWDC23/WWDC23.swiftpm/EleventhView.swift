@@ -23,7 +23,7 @@ struct EleventhView: View {
                 }
                 
                 if spider02{
-                    NavigationLink(destination: Spider2(), isActive: $spider02) {
+                    NavigationLink(destination: Spider2().navigationBarBackButtonHidden(true), isActive: $spider02) {
                         EmptyView()
                     }
                     .hidden()

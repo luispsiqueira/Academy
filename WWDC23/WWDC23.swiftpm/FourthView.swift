@@ -135,17 +135,17 @@ struct FourthView: View {
             
                 
 
-                NavigationLink(destination: FifthView()) {
+                NavigationLink(destination: FifthView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.green)
-                            .frame(width: 120, height: 40)
+                            .frame(width: 120, height: 60)
                         Text("Let's go!")
                             .foregroundColor(.white)
                             .font(.title)
                     }
                 }
-                .padding(.bottom, 100)
+                .padding(.bottom, 90)
             }
         }
     }

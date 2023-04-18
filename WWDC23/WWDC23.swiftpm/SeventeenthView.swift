@@ -59,7 +59,7 @@ What is the value of x?
                 
                 Spacer()
                 HStack{
-                    NavigationLink(destination: Wrong4()){
+                    NavigationLink(destination: Wrong4().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -74,7 +74,7 @@ What is the value of x?
 
                     
                     
-                    NavigationLink(destination: Wrong4()) {
+                    NavigationLink(destination: Wrong4().navigationBarBackButtonHidden(true)) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color.gray)
@@ -87,7 +87,7 @@ What is the value of x?
                     
                     
                     
-                    NavigationLink(destination: EighteenthView()){
+                    NavigationLink(destination: EighteenthView().navigationBarBackButtonHidden(true)){
                         ZStack {
                             Spacer()
                             RoundedRectangle(cornerRadius: 10)
@@ -106,7 +106,7 @@ What is the value of x?
                 
                 
                 
-                NavigationLink(destination: Help4()){
+                NavigationLink(destination: Help4().navigationBarBackButtonHidden(true)){
                     ZStack {
                         Circle()
                             .fill(Color.white)

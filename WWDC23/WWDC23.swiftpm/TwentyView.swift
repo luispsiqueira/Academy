@@ -23,7 +23,7 @@ struct TwentyView: View {
                 }
 
                 if next21{
-                    NavigationLink(destination: Twenty_firstView(), isActive: $next21) {
+                    NavigationLink(destination: Twenty_firstView().navigationBarBackButtonHidden(true), isActive: $next21) {
                         EmptyView()
                     }
                     .hidden()

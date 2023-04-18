@@ -24,14 +24,14 @@ struct EighthView: View {
                 }
 
                 if next9{
-                    NavigationLink(destination: NinethView(), isActive: $next9) {
+                    NavigationLink(destination: NinethView().navigationBarBackButtonHidden(true), isActive: $next9) {
                         EmptyView()
                     }
                     .hidden()
                 }
                 
                 if spider01{
-                    NavigationLink(destination: Spider1(), isActive: $spider01) {
+                    NavigationLink(destination: Spider1().navigationBarBackButtonHidden(true), isActive: $spider01) {
                         EmptyView()
                     }
                     .hidden()

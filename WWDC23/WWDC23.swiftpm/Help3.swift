@@ -44,7 +44,7 @@ struct Help3: View {
                 
         
                 Spacer()
-                NavigationLink(destination: ThirteenthView()) {
+                NavigationLink(destination: ThirteenthView().navigationBarBackButtonHidden(true)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color.gray)
