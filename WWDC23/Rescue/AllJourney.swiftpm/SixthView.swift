@@ -19,7 +19,7 @@ struct SixthView: View {
                 
                 HStack{
                     Spacer()
-                    Text("Congrats, Sophia learn the spell! \n\n\n\n\n Try press the button of the spell on the next \nscreem to see what happen.")
+                    Text("Congrats, Sophia learn the spell! \n\n\n\n\n Try press the button of the spell on the next \nscreen to see what happen.")
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
