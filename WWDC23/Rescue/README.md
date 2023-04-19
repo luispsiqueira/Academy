@@ -18,8 +18,9 @@ So, I`ve joined both of this ideas and develop the "Rescue", which I hope that t
 Sound:
 - music1: "Full of Energy (Non-Commercial)" (https://freesound.org/s/520192/) by code_box is licensed under Creative Commons Attribution-NonCommercial ( http://creativecommons.org/licenses/by-nc/4.0/ )
 
-//
-Also, I want to thank my mentors, my family and friends, that helped me and supported through all this challenge.
 
-\\
+
+Finally, I want to thank my mentors, my family and friends, that helped me and supported through all this challenge.
+
+
 This project is author by me, Luis Paulo Siqueira.
