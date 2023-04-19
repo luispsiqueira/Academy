@@ -5,7 +5,7 @@ WWDC23 Swift Student Challenge project.
 ## About the project
 The project is a game which the user helps a little witch to rescue her father, who was kidnapped by a dark witch. For that, the player must complet some logical math challenges, so the main character, Sophia, learns a new spell. With this new knowledge, it's possible to advance in the game, until the final level, in which sophia rescues her father.
 The purpose of the game is to make that the user develops a logical math thinking and has fun in the process by using the speels and scrolling the map.
-It's necessary to say that the game was desenvolved just for iphones, in reason to be more portable than others Apple products, and the interface was made for the iphone 14.
+It's necessary to say that the game was develop just for Iphones, in reason to be more portable than others Apple products, and the interface was made for the Iphone 14.
 
 
 ## About the creative process
